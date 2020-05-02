@@ -1,0 +1,59 @@
+{
+  "name": "gistpad-contrib",
+  "displayName": "GistPad Contrib",
+  "description": "VS Code extension that augments the core GistPad experience (e.g. adding extra playground languages).",
+  "publisher": "vsls-contrib",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.40.0"
+  },
+  "icon": "images/icon.png",
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "gistpad:playground-language"
+  ],
+  "repository": {
+	  "type": "git",
+	  "url": "https://github.com/vsls-contrib/gistpad-contrib.git"
+  },
+  "main": "./out/extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "gistpad.playgrounds.languages": [
+      {
+        "type": "markup",
+        "extensions": [
+          ".adoc",
+          ".haml",
+          ".txt"
+        ]
+      }
+    ],
+    "gistpad.playgrounds.templateGalleries": [
+      {
+        "id": "web:contrib",
+        "url": "https://gist.githubusercontent.com/lostintangent/5b8d7f1319cdf0321a6c3aeffa909876/raw/gallery.json"
+      }
+    ]
+  },
+  "extensionDependencies": [
+    "vsls-contrib.gistfs"
+  ],
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "typescript": "^3.1.4",
+    "vscode": "^1.1.25",
+    "@types/node": "^8.10.25"
+  },
+  "dependencies": {
+    "asciidoctor": "^2.1.1",
+    "haml": "^0.4.3"
+  }
+}

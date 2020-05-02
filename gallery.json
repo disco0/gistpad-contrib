@@ -1,0 +1,11 @@
+{
+    "id": "web:contrib",
+    "label": "Contrib",
+    "description": "Get started with additional languages.",
+    "templates": [
+        {
+            "label": "HAML/CSS/JavaScript",
+            "gist": "17587023d27938c3bd122c4404cf1910"
+        }
+    ]
+}
