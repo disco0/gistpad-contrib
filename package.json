@@ -34,7 +34,7 @@
     "gistpad.playgrounds.templateGalleries": [
       {
         "id": "web:contrib",
-        "url": "https://gist.githubusercontent.com/lostintangent/5b8d7f1319cdf0321a6c3aeffa909876/raw/gallery.json"
+        "url": "https://cdn.jsdelivr.net/gh/vsls-contrib/gistpad-contrib/gallery.json"
       }
     ]
   },
